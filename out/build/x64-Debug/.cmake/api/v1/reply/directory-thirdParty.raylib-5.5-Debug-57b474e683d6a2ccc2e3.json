@@ -1,0 +1,19 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 9
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "thirdParty/raylib-5.5",
+		"source" : "thirdParty/raylib-5.5"
+	}
+}

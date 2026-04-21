@@ -1,0 +1,122 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"include"
+		],
+		"files" : 
+		[
+			"thirdParty/raylib-5.5/cmake/InstallConfigurations.cmake",
+			"thirdParty/raylib-5.5/src/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 116,
+				"parent" : 0
+			},
+			{
+				"file" : 0,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 22,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 23,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 24,
+				"parent" : 2
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 9
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"thirdParty/raylib-5.5/raylib/raylib.lib"
+			],
+			"targetId" : "raylib::@639ce358166ee5afede3",
+			"targetIndex" : 3,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "include",
+			"paths" : 
+			[
+				"thirdParty/raylib-5.5/src/raylib.h",
+				"thirdParty/raylib-5.5/src/rlgl.h",
+				"thirdParty/raylib-5.5/src/raymath.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "lib/pkgconfig",
+			"paths" : 
+			[
+				"out/build/x64-Debug/thirdParty/raylib-5.5/raylib/raylib.pc"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/raylib",
+			"paths" : 
+			[
+				"out/build/x64-Debug/thirdParty/raylib-5.5/raylib/raylib-config-version.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 6,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/raylib",
+			"paths" : 
+			[
+				"thirdParty/raylib-5.5/src/../cmake/raylib-config.cmake"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "thirdParty/raylib-5.5/raylib",
+		"source" : "thirdParty/raylib-5.5/src"
+	}
+}

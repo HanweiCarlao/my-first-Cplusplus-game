@@ -1,0 +1,67 @@
+{
+	"abstract" : true,
+	"backtrace" : 5,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"find_package",
+			"include"
+		],
+		"files" : 
+		[
+			"C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.2/Modules/FindOpenGL.cmake",
+			"thirdParty/raylib-5.5/cmake/LibraryConfigurations.cmake",
+			"thirdParty/raylib-5.5/src/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 49,
+				"parent" : 0
+			},
+			{
+				"file" : 1,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 26,
+				"parent" : 2
+			},
+			{
+				"file" : 0,
+				"parent" : 3
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 819,
+				"parent" : 4
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 9
+	},
+	"id" : "OpenGL::GL::@639ce358166ee5afede3",
+	"imported" : true,
+	"local" : true,
+	"name" : "OpenGL::GL",
+	"paths" : 
+	{
+		"build" : "thirdParty/raylib-5.5/raylib",
+		"source" : "thirdParty/raylib-5.5/src"
+	},
+	"sources" : [],
+	"type" : "INTERFACE_LIBRARY"
+}
