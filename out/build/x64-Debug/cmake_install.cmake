@@ -33,11 +33,18 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for each subdirectory.
+  # Include the install script for the subdirectory.
   include("C:/Mac/Home/Documents/Codes/my-first-Cplusplus-game/out/build/x64-Debug/thirdParty/raylib-5.5/cmake_install.cmake")
-  include("C:/Mac/Home/Documents/Codes/my-first-Cplusplus-game/out/build/x64-Debug/thirdParty/imgui-docking/cmake_install.cmake")
-  include("C:/Mac/Home/Documents/Codes/my-first-Cplusplus-game/out/build/x64-Debug/thirdParty/rlImgui/cmake_install.cmake")
+endif()
 
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("C:/Mac/Home/Documents/Codes/my-first-Cplusplus-game/out/build/x64-Debug/thirdParty/imgui-docking/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("C:/Mac/Home/Documents/Codes/my-first-Cplusplus-game/out/build/x64-Debug/thirdParty/rlImgui/cmake_install.cmake")
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT

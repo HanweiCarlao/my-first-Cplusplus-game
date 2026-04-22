@@ -51,9 +51,9 @@ build cmake_object_order_depends_target_myfirstgame: phony || cmake_object_order
 
 build CMakeFiles\myfirstgame.dir\src\gameLayer\gameMain.cpp.obj: CXX_COMPILER__myfirstgame_unscanned_Debug C$:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\src\gameLayer\gameMain.cpp || cmake_object_order_depends_target_myfirstgame
   CONFIG = Debug
-  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -DRESOURCES_PATH=\"C:/Mac/Home/Documents/Codes/my-first-Cplusplus-game/resources/\"
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
-  INCLUDES = -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\src\gameLayer -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\src\platform -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\include -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\imgui-docking\imgui -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\rlImgui
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -DPRODUCTION_BUILD=0 -DRESOURCES_PATH=\"C:/Mac/Home/Documents/Codes/my-first-Cplusplus-game/resources/\" -D_CRT_SECURE_NO_WARNINGS
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd -mavx2 -mfma
+  INCLUDES = -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\src -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\src\gameLayer -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\src\platform -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\include -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\imgui-docking\imgui -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\rlImgui
   OBJECT_DIR = CMakeFiles\myfirstgame.dir
   OBJECT_FILE_DIR = CMakeFiles\myfirstgame.dir\src\gameLayer
   TARGET_COMPILE_PDB = CMakeFiles\myfirstgame.dir\
@@ -62,9 +62,9 @@ build CMakeFiles\myfirstgame.dir\src\gameLayer\gameMain.cpp.obj: CXX_COMPILER__m
 
 build CMakeFiles\myfirstgame.dir\src\platform\main.cpp.obj: CXX_COMPILER__myfirstgame_unscanned_Debug C$:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\src\platform\main.cpp || cmake_object_order_depends_target_myfirstgame
   CONFIG = Debug
-  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -DRESOURCES_PATH=\"C:/Mac/Home/Documents/Codes/my-first-Cplusplus-game/resources/\"
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
-  INCLUDES = -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\src\gameLayer -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\src\platform -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\include -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\imgui-docking\imgui -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\rlImgui
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -DPRODUCTION_BUILD=0 -DRESOURCES_PATH=\"C:/Mac/Home/Documents/Codes/my-first-Cplusplus-game/resources/\" -D_CRT_SECURE_NO_WARNINGS
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd -mavx2 -mfma
+  INCLUDES = -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\src -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\src\gameLayer -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\src\platform -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\include -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\imgui-docking\imgui -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\rlImgui
   OBJECT_DIR = CMakeFiles\myfirstgame.dir
   OBJECT_FILE_DIR = CMakeFiles\myfirstgame.dir\src\platform
   TARGET_COMPILE_PDB = CMakeFiles\myfirstgame.dir\
@@ -81,7 +81,7 @@ build CMakeFiles\myfirstgame.dir\src\platform\main.cpp.obj: CXX_COMPILER__myfirs
 
 build myfirstgame.exe: CXX_EXECUTABLE_LINKER__myfirstgame_Debug CMakeFiles\myfirstgame.dir\src\gameLayer\gameMain.cpp.obj CMakeFiles\myfirstgame.dir\src\platform\main.cpp.obj | thirdParty\raylib-5.5\raylib\raylib.lib thirdParty\imgui-docking\imgui.lib thirdParty\rlImgui\rlimgui.lib thirdParty\raylib-5.5\raylib\raylib.lib thirdParty\imgui-docking\imgui.lib || thirdParty\imgui-docking\imgui.lib thirdParty\raylib-5.5\raylib\external\glfw\src\glfw thirdParty\raylib-5.5\raylib\raylib.lib thirdParty\rlImgui\rlimgui.lib
   CONFIG = Debug
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -MDd
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = thirdParty\raylib-5.5\raylib\raylib.lib  thirdParty\imgui-docking\imgui.lib  thirdParty\rlImgui\rlimgui.lib  thirdParty\raylib-5.5\raylib\raylib.lib  opengl32.lib  glu32.lib  winmm.lib  thirdParty\imgui-docking\imgui.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
   OBJECT_DIR = CMakeFiles\myfirstgame.dir
@@ -282,7 +282,7 @@ build cmake_object_order_depends_target_raylib: phony || cmake_object_order_depe
 build thirdParty\raylib-5.5\raylib\CMakeFiles\raylib.dir\raudio.c.obj: C_COMPILER__raylib_unscanned_Debug C$:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\raudio.c || cmake_object_order_depends_target_raylib
   CONFIG = Debug
   DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -D_CRT_SECURE_NO_WARNINGS
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 -MDd -mavx2 -mfma
   INCLUDES = -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src -external:IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\include -external:W0
   OBJECT_DIR = thirdParty\raylib-5.5\raylib\CMakeFiles\raylib.dir
   OBJECT_FILE_DIR = thirdParty\raylib-5.5\raylib\CMakeFiles\raylib.dir
@@ -293,7 +293,7 @@ build thirdParty\raylib-5.5\raylib\CMakeFiles\raylib.dir\raudio.c.obj: C_COMPILE
 build thirdParty\raylib-5.5\raylib\CMakeFiles\raylib.dir\rcore.c.obj: C_COMPILER__raylib_unscanned_Debug C$:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\rcore.c || cmake_object_order_depends_target_raylib
   CONFIG = Debug
   DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -D_CRT_SECURE_NO_WARNINGS
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 -MDd -mavx2 -mfma
   INCLUDES = -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src -external:IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\include -external:W0
   OBJECT_DIR = thirdParty\raylib-5.5\raylib\CMakeFiles\raylib.dir
   OBJECT_FILE_DIR = thirdParty\raylib-5.5\raylib\CMakeFiles\raylib.dir
@@ -304,7 +304,7 @@ build thirdParty\raylib-5.5\raylib\CMakeFiles\raylib.dir\rcore.c.obj: C_COMPILER
 build thirdParty\raylib-5.5\raylib\CMakeFiles\raylib.dir\rmodels.c.obj: C_COMPILER__raylib_unscanned_Debug C$:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\rmodels.c || cmake_object_order_depends_target_raylib
   CONFIG = Debug
   DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -D_CRT_SECURE_NO_WARNINGS
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 -MDd -mavx2 -mfma
   INCLUDES = -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src -external:IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\include -external:W0
   OBJECT_DIR = thirdParty\raylib-5.5\raylib\CMakeFiles\raylib.dir
   OBJECT_FILE_DIR = thirdParty\raylib-5.5\raylib\CMakeFiles\raylib.dir
@@ -315,7 +315,7 @@ build thirdParty\raylib-5.5\raylib\CMakeFiles\raylib.dir\rmodels.c.obj: C_COMPIL
 build thirdParty\raylib-5.5\raylib\CMakeFiles\raylib.dir\rshapes.c.obj: C_COMPILER__raylib_unscanned_Debug C$:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\rshapes.c || cmake_object_order_depends_target_raylib
   CONFIG = Debug
   DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -D_CRT_SECURE_NO_WARNINGS
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 -MDd -mavx2 -mfma
   INCLUDES = -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src -external:IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\include -external:W0
   OBJECT_DIR = thirdParty\raylib-5.5\raylib\CMakeFiles\raylib.dir
   OBJECT_FILE_DIR = thirdParty\raylib-5.5\raylib\CMakeFiles\raylib.dir
@@ -326,7 +326,7 @@ build thirdParty\raylib-5.5\raylib\CMakeFiles\raylib.dir\rshapes.c.obj: C_COMPIL
 build thirdParty\raylib-5.5\raylib\CMakeFiles\raylib.dir\rtext.c.obj: C_COMPILER__raylib_unscanned_Debug C$:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\rtext.c || cmake_object_order_depends_target_raylib
   CONFIG = Debug
   DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -D_CRT_SECURE_NO_WARNINGS
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 -MDd -mavx2 -mfma
   INCLUDES = -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src -external:IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\include -external:W0
   OBJECT_DIR = thirdParty\raylib-5.5\raylib\CMakeFiles\raylib.dir
   OBJECT_FILE_DIR = thirdParty\raylib-5.5\raylib\CMakeFiles\raylib.dir
@@ -337,7 +337,7 @@ build thirdParty\raylib-5.5\raylib\CMakeFiles\raylib.dir\rtext.c.obj: C_COMPILER
 build thirdParty\raylib-5.5\raylib\CMakeFiles\raylib.dir\rtextures.c.obj: C_COMPILER__raylib_unscanned_Debug C$:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\rtextures.c || cmake_object_order_depends_target_raylib
   CONFIG = Debug
   DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -D_CRT_SECURE_NO_WARNINGS
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 -MDd -mavx2 -mfma
   INCLUDES = -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src -external:IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\include -external:W0
   OBJECT_DIR = thirdParty\raylib-5.5\raylib\CMakeFiles\raylib.dir
   OBJECT_FILE_DIR = thirdParty\raylib-5.5\raylib\CMakeFiles\raylib.dir
@@ -348,7 +348,7 @@ build thirdParty\raylib-5.5\raylib\CMakeFiles\raylib.dir\rtextures.c.obj: C_COMP
 build thirdParty\raylib-5.5\raylib\CMakeFiles\raylib.dir\utils.c.obj: C_COMPILER__raylib_unscanned_Debug C$:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\utils.c || cmake_object_order_depends_target_raylib
   CONFIG = Debug
   DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -D_CRT_SECURE_NO_WARNINGS
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 -MDd -mavx2 -mfma
   INCLUDES = -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src -external:IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\include -external:W0
   OBJECT_DIR = thirdParty\raylib-5.5\raylib\CMakeFiles\raylib.dir
   OBJECT_FILE_DIR = thirdParty\raylib-5.5\raylib\CMakeFiles\raylib.dir
@@ -366,7 +366,7 @@ build thirdParty\raylib-5.5\raylib\CMakeFiles\raylib.dir\utils.c.obj: C_COMPILER
 
 build thirdParty\raylib-5.5\raylib\raylib.lib: C_STATIC_LIBRARY_LINKER__raylib_Debug thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir\context.c.obj thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir\init.c.obj thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir\input.c.obj thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir\monitor.c.obj thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir\platform.c.obj thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir\vulkan.c.obj thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir\window.c.obj thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir\egl_context.c.obj thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir\osmesa_context.c.obj thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir\null_init.c.obj thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir\null_monitor.c.obj thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir\null_window.c.obj thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir\null_joystick.c.obj thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir\win32_module.c.obj thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir\win32_time.c.obj thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir\win32_thread.c.obj thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir\win32_init.c.obj thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir\win32_joystick.c.obj thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir\win32_monitor.c.obj thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir\win32_window.c.obj thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir\wgl_context.c.obj thirdParty\raylib-5.5\raylib\CMakeFiles\raylib.dir\raudio.c.obj thirdParty\raylib-5.5\raylib\CMakeFiles\raylib.dir\rcore.c.obj thirdParty\raylib-5.5\raylib\CMakeFiles\raylib.dir\rmodels.c.obj thirdParty\raylib-5.5\raylib\CMakeFiles\raylib.dir\rshapes.c.obj thirdParty\raylib-5.5\raylib\CMakeFiles\raylib.dir\rtext.c.obj thirdParty\raylib-5.5\raylib\CMakeFiles\raylib.dir\rtextures.c.obj thirdParty\raylib-5.5\raylib\CMakeFiles\raylib.dir\utils.c.obj || thirdParty\raylib-5.5\raylib\external\glfw\src\glfw
   CONFIG = Debug
-  LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1
+  LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 -MDd
   LINK_FLAGS = /machine:x64
   OBJECT_DIR = thirdParty\raylib-5.5\raylib\CMakeFiles\raylib.dir
   POST_BUILD = cd .
@@ -552,7 +552,7 @@ build cmake_object_order_depends_target_glfw: phony || .
 build thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir\context.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\src\context.c || cmake_object_order_depends_target_glfw
   CONFIG = Debug
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /W3
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 -MDd -mavx2 -mfma /W3
   INCLUDES = -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\include -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\src -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\out\build\x64-Debug\thirdParty\raylib-5.5\raylib\external\glfw\src
   OBJECT_DIR = thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir
@@ -563,7 +563,7 @@ build thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir\context
 build thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir\init.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\src\init.c || cmake_object_order_depends_target_glfw
   CONFIG = Debug
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /W3
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 -MDd -mavx2 -mfma /W3
   INCLUDES = -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\include -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\src -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\out\build\x64-Debug\thirdParty\raylib-5.5\raylib\external\glfw\src
   OBJECT_DIR = thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir
@@ -574,7 +574,7 @@ build thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir\init.c.
 build thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir\input.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\src\input.c || cmake_object_order_depends_target_glfw
   CONFIG = Debug
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /W3
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 -MDd -mavx2 -mfma /W3
   INCLUDES = -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\include -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\src -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\out\build\x64-Debug\thirdParty\raylib-5.5\raylib\external\glfw\src
   OBJECT_DIR = thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir
@@ -585,7 +585,7 @@ build thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir\input.c
 build thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir\monitor.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\src\monitor.c || cmake_object_order_depends_target_glfw
   CONFIG = Debug
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /W3
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 -MDd -mavx2 -mfma /W3
   INCLUDES = -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\include -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\src -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\out\build\x64-Debug\thirdParty\raylib-5.5\raylib\external\glfw\src
   OBJECT_DIR = thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir
@@ -596,7 +596,7 @@ build thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir\monitor
 build thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir\platform.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\src\platform.c || cmake_object_order_depends_target_glfw
   CONFIG = Debug
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /W3
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 -MDd -mavx2 -mfma /W3
   INCLUDES = -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\include -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\src -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\out\build\x64-Debug\thirdParty\raylib-5.5\raylib\external\glfw\src
   OBJECT_DIR = thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir
@@ -607,7 +607,7 @@ build thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir\platfor
 build thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir\vulkan.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\src\vulkan.c || cmake_object_order_depends_target_glfw
   CONFIG = Debug
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /W3
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 -MDd -mavx2 -mfma /W3
   INCLUDES = -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\include -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\src -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\out\build\x64-Debug\thirdParty\raylib-5.5\raylib\external\glfw\src
   OBJECT_DIR = thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir
@@ -618,7 +618,7 @@ build thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir\vulkan.
 build thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir\window.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\src\window.c || cmake_object_order_depends_target_glfw
   CONFIG = Debug
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /W3
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 -MDd -mavx2 -mfma /W3
   INCLUDES = -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\include -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\src -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\out\build\x64-Debug\thirdParty\raylib-5.5\raylib\external\glfw\src
   OBJECT_DIR = thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir
@@ -629,7 +629,7 @@ build thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir\window.
 build thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir\egl_context.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\src\egl_context.c || cmake_object_order_depends_target_glfw
   CONFIG = Debug
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /W3
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 -MDd -mavx2 -mfma /W3
   INCLUDES = -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\include -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\src -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\out\build\x64-Debug\thirdParty\raylib-5.5\raylib\external\glfw\src
   OBJECT_DIR = thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir
@@ -640,7 +640,7 @@ build thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir\egl_con
 build thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir\osmesa_context.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\src\osmesa_context.c || cmake_object_order_depends_target_glfw
   CONFIG = Debug
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /W3
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 -MDd -mavx2 -mfma /W3
   INCLUDES = -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\include -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\src -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\out\build\x64-Debug\thirdParty\raylib-5.5\raylib\external\glfw\src
   OBJECT_DIR = thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir
@@ -651,7 +651,7 @@ build thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir\osmesa_
 build thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir\null_init.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\src\null_init.c || cmake_object_order_depends_target_glfw
   CONFIG = Debug
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /W3
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 -MDd -mavx2 -mfma /W3
   INCLUDES = -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\include -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\src -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\out\build\x64-Debug\thirdParty\raylib-5.5\raylib\external\glfw\src
   OBJECT_DIR = thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir
@@ -662,7 +662,7 @@ build thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir\null_in
 build thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir\null_monitor.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\src\null_monitor.c || cmake_object_order_depends_target_glfw
   CONFIG = Debug
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /W3
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 -MDd -mavx2 -mfma /W3
   INCLUDES = -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\include -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\src -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\out\build\x64-Debug\thirdParty\raylib-5.5\raylib\external\glfw\src
   OBJECT_DIR = thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir
@@ -673,7 +673,7 @@ build thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir\null_mo
 build thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir\null_window.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\src\null_window.c || cmake_object_order_depends_target_glfw
   CONFIG = Debug
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /W3
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 -MDd -mavx2 -mfma /W3
   INCLUDES = -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\include -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\src -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\out\build\x64-Debug\thirdParty\raylib-5.5\raylib\external\glfw\src
   OBJECT_DIR = thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir
@@ -684,7 +684,7 @@ build thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir\null_wi
 build thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir\null_joystick.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\src\null_joystick.c || cmake_object_order_depends_target_glfw
   CONFIG = Debug
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /W3
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 -MDd -mavx2 -mfma /W3
   INCLUDES = -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\include -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\src -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\out\build\x64-Debug\thirdParty\raylib-5.5\raylib\external\glfw\src
   OBJECT_DIR = thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir
@@ -695,7 +695,7 @@ build thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir\null_jo
 build thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir\win32_module.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\src\win32_module.c || cmake_object_order_depends_target_glfw
   CONFIG = Debug
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /W3
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 -MDd -mavx2 -mfma /W3
   INCLUDES = -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\include -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\src -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\out\build\x64-Debug\thirdParty\raylib-5.5\raylib\external\glfw\src
   OBJECT_DIR = thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir
@@ -706,7 +706,7 @@ build thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir\win32_m
 build thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir\win32_time.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\src\win32_time.c || cmake_object_order_depends_target_glfw
   CONFIG = Debug
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /W3
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 -MDd -mavx2 -mfma /W3
   INCLUDES = -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\include -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\src -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\out\build\x64-Debug\thirdParty\raylib-5.5\raylib\external\glfw\src
   OBJECT_DIR = thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir
@@ -717,7 +717,7 @@ build thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir\win32_t
 build thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir\win32_thread.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\src\win32_thread.c || cmake_object_order_depends_target_glfw
   CONFIG = Debug
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /W3
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 -MDd -mavx2 -mfma /W3
   INCLUDES = -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\include -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\src -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\out\build\x64-Debug\thirdParty\raylib-5.5\raylib\external\glfw\src
   OBJECT_DIR = thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir
@@ -728,7 +728,7 @@ build thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir\win32_t
 build thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir\win32_init.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\src\win32_init.c || cmake_object_order_depends_target_glfw
   CONFIG = Debug
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /W3
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 -MDd -mavx2 -mfma /W3
   INCLUDES = -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\include -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\src -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\out\build\x64-Debug\thirdParty\raylib-5.5\raylib\external\glfw\src
   OBJECT_DIR = thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir
@@ -739,7 +739,7 @@ build thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir\win32_i
 build thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir\win32_joystick.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\src\win32_joystick.c || cmake_object_order_depends_target_glfw
   CONFIG = Debug
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /W3
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 -MDd -mavx2 -mfma /W3
   INCLUDES = -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\include -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\src -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\out\build\x64-Debug\thirdParty\raylib-5.5\raylib\external\glfw\src
   OBJECT_DIR = thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir
@@ -750,7 +750,7 @@ build thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir\win32_j
 build thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir\win32_monitor.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\src\win32_monitor.c || cmake_object_order_depends_target_glfw
   CONFIG = Debug
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /W3
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 -MDd -mavx2 -mfma /W3
   INCLUDES = -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\include -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\src -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\out\build\x64-Debug\thirdParty\raylib-5.5\raylib\external\glfw\src
   OBJECT_DIR = thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir
@@ -761,7 +761,7 @@ build thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir\win32_m
 build thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir\win32_window.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\src\win32_window.c || cmake_object_order_depends_target_glfw
   CONFIG = Debug
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /W3
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 -MDd -mavx2 -mfma /W3
   INCLUDES = -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\include -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\src -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\out\build\x64-Debug\thirdParty\raylib-5.5\raylib\external\glfw\src
   OBJECT_DIR = thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir
@@ -772,7 +772,7 @@ build thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir\win32_w
 build thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir\wgl_context.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\src\wgl_context.c || cmake_object_order_depends_target_glfw
   CONFIG = Debug
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /W3
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 -MDd -mavx2 -mfma /W3
   INCLUDES = -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\include -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\src -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\out\build\x64-Debug\thirdParty\raylib-5.5\raylib\external\glfw\src
   OBJECT_DIR = thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = thirdParty\raylib-5.5\raylib\external\glfw\src\CMakeFiles\glfw.dir
@@ -894,7 +894,7 @@ build cmake_object_order_depends_target_imgui: phony || .
 
 build thirdParty\imgui-docking\CMakeFiles\imgui.dir\imgui\imgui.cpp.obj: CXX_COMPILER__imgui_unscanned_Debug C$:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\imgui-docking\imgui\imgui.cpp || cmake_object_order_depends_target_imgui
   CONFIG = Debug
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd -mavx2 -mfma
   INCLUDES = -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\imgui-docking\imgui
   OBJECT_DIR = thirdParty\imgui-docking\CMakeFiles\imgui.dir
   OBJECT_FILE_DIR = thirdParty\imgui-docking\CMakeFiles\imgui.dir\imgui
@@ -904,7 +904,7 @@ build thirdParty\imgui-docking\CMakeFiles\imgui.dir\imgui\imgui.cpp.obj: CXX_COM
 
 build thirdParty\imgui-docking\CMakeFiles\imgui.dir\imgui\imgui_demo.cpp.obj: CXX_COMPILER__imgui_unscanned_Debug C$:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\imgui-docking\imgui\imgui_demo.cpp || cmake_object_order_depends_target_imgui
   CONFIG = Debug
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd -mavx2 -mfma
   INCLUDES = -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\imgui-docking\imgui
   OBJECT_DIR = thirdParty\imgui-docking\CMakeFiles\imgui.dir
   OBJECT_FILE_DIR = thirdParty\imgui-docking\CMakeFiles\imgui.dir\imgui
@@ -914,7 +914,7 @@ build thirdParty\imgui-docking\CMakeFiles\imgui.dir\imgui\imgui_demo.cpp.obj: CX
 
 build thirdParty\imgui-docking\CMakeFiles\imgui.dir\imgui\imgui_draw.cpp.obj: CXX_COMPILER__imgui_unscanned_Debug C$:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\imgui-docking\imgui\imgui_draw.cpp || cmake_object_order_depends_target_imgui
   CONFIG = Debug
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd -mavx2 -mfma
   INCLUDES = -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\imgui-docking\imgui
   OBJECT_DIR = thirdParty\imgui-docking\CMakeFiles\imgui.dir
   OBJECT_FILE_DIR = thirdParty\imgui-docking\CMakeFiles\imgui.dir\imgui
@@ -924,7 +924,7 @@ build thirdParty\imgui-docking\CMakeFiles\imgui.dir\imgui\imgui_draw.cpp.obj: CX
 
 build thirdParty\imgui-docking\CMakeFiles\imgui.dir\imgui\imgui_tables.cpp.obj: CXX_COMPILER__imgui_unscanned_Debug C$:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\imgui-docking\imgui\imgui_tables.cpp || cmake_object_order_depends_target_imgui
   CONFIG = Debug
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd -mavx2 -mfma
   INCLUDES = -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\imgui-docking\imgui
   OBJECT_DIR = thirdParty\imgui-docking\CMakeFiles\imgui.dir
   OBJECT_FILE_DIR = thirdParty\imgui-docking\CMakeFiles\imgui.dir\imgui
@@ -934,7 +934,7 @@ build thirdParty\imgui-docking\CMakeFiles\imgui.dir\imgui\imgui_tables.cpp.obj: 
 
 build thirdParty\imgui-docking\CMakeFiles\imgui.dir\imgui\imgui_widgets.cpp.obj: CXX_COMPILER__imgui_unscanned_Debug C$:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\imgui-docking\imgui\imgui_widgets.cpp || cmake_object_order_depends_target_imgui
   CONFIG = Debug
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd -mavx2 -mfma
   INCLUDES = -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\imgui-docking\imgui
   OBJECT_DIR = thirdParty\imgui-docking\CMakeFiles\imgui.dir
   OBJECT_FILE_DIR = thirdParty\imgui-docking\CMakeFiles\imgui.dir\imgui
@@ -952,7 +952,7 @@ build thirdParty\imgui-docking\CMakeFiles\imgui.dir\imgui\imgui_widgets.cpp.obj:
 
 build thirdParty\imgui-docking\imgui.lib: CXX_STATIC_LIBRARY_LINKER__imgui_Debug thirdParty\imgui-docking\CMakeFiles\imgui.dir\imgui\imgui.cpp.obj thirdParty\imgui-docking\CMakeFiles\imgui.dir\imgui\imgui_demo.cpp.obj thirdParty\imgui-docking\CMakeFiles\imgui.dir\imgui\imgui_draw.cpp.obj thirdParty\imgui-docking\CMakeFiles\imgui.dir\imgui\imgui_tables.cpp.obj thirdParty\imgui-docking\CMakeFiles\imgui.dir\imgui\imgui_widgets.cpp.obj
   CONFIG = Debug
-  LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -MDd
   LINK_FLAGS = /machine:x64
   OBJECT_DIR = thirdParty\imgui-docking\CMakeFiles\imgui.dir
   POST_BUILD = cd .
@@ -1056,7 +1056,7 @@ build cmake_object_order_depends_target_rlimgui: phony || cmake_object_order_dep
 build thirdParty\rlImgui\CMakeFiles\rlimgui.dir\rlImGui.cpp.obj: CXX_COMPILER__rlimgui_unscanned_Debug C$:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\rlImgui\rlImGui.cpp || cmake_object_order_depends_target_rlimgui
   CONFIG = Debug
   DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd -mavx2 -mfma
   INCLUDES = -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\rlImgui -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\imgui-docking\imgui -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src -IC:\Mac\Home\Documents\Codes\my-first-Cplusplus-game\thirdParty\raylib-5.5\src\external\glfw\include
   OBJECT_DIR = thirdParty\rlImgui\CMakeFiles\rlimgui.dir
   OBJECT_FILE_DIR = thirdParty\rlImgui\CMakeFiles\rlimgui.dir
@@ -1074,7 +1074,7 @@ build thirdParty\rlImgui\CMakeFiles\rlimgui.dir\rlImGui.cpp.obj: CXX_COMPILER__r
 
 build thirdParty\rlImgui\rlimgui.lib: CXX_STATIC_LIBRARY_LINKER__rlimgui_Debug thirdParty\rlImgui\CMakeFiles\rlimgui.dir\rlImGui.cpp.obj || thirdParty\imgui-docking\imgui.lib thirdParty\raylib-5.5\raylib\external\glfw\src\glfw thirdParty\raylib-5.5\raylib\raylib.lib
   CONFIG = Debug
-  LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -MDd
   LINK_FLAGS = /machine:x64
   OBJECT_DIR = thirdParty\rlImgui\CMakeFiles\rlimgui.dir
   POST_BUILD = cd .

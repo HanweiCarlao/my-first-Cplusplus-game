@@ -4,7 +4,7 @@
 #include <rlImGui.h>
 #include <gameMain.h>
 
-int main() {
+int main(void) {
 
 #if PRODUCTION_BUILD == 1
 	SetTraceLogLevel(LOG_NONE);//disable raylib logs in production build
@@ -13,6 +13,8 @@ int main() {
 
 	SetConfigFlags(FLAG_WINDOW_RESIZABLE);
 	InitWindow(800, 450, "window name");
+	SetExitKey(KEY_NULL); //Disable Exc from closing window
+	SetTargetFPS(240);
 
 #pragma region ImGui setup
 	rlImGuiSetup(true);
@@ -57,7 +59,7 @@ int main() {
 	}
 	CloseWindow();
 	closeGame();
-
+	std::cout << "\n\nGame closed successfully!" << std::endl;
 #pragma region ImGui shutdown
 	rlImGuiShutdown();
 #pragma endregion
